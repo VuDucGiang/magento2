@@ -36,7 +36,7 @@ $data = json_decode($con, true);
     <tr>
         <th scope="row"><h5><?= $k+1 ?></h5></th>
         <td style="font-size: 1.25rem;">
-            <img src="https://www.countryflags.io/<?= substr($currency['@attributes']['CurrencyCode'], 0, -1) ?>/shiny/24.png">
+            <img src="https://wise.com/public-resources/assets/flags/rectangle/<?= substr(strtolower($currency['@attributes']['CurrencyCode']), 0) ?>.png" style="width:38px;height:26px;">
             <?= $currency['@attributes']['CurrencyCode'] ?>
         <td>
         <td><h5><?= $currency['@attributes']['CurrencyName'] ?></h5></td>
